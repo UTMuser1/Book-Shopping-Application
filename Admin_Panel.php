@@ -13,7 +13,7 @@ if (isset($_GET['delete'])) {
     $id = $_GET['delete'];
     $sql = "DELETE FROM books WHERE id = $id";
     $conn->query($sql);
-    echo "Deleted book ID $idx";
+    echo "Deleted book ID $id";
 }
 echo "</ul>";
 ?>
